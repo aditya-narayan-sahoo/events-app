@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { getEventById } from "../../dummy-data";
 import { useRouter } from "next/router";
 import EventSummary from "../../components/event-detail/event-summary";
@@ -13,7 +12,7 @@ const EventDetailPage = () => {
     return <p>No event found !</p>;
   }
   return (
-    <Fragment>
+    <>
       <EventSummary title={event.title} />
       <EventLogistics
         date={event.date}
@@ -24,7 +23,7 @@ const EventDetailPage = () => {
       <EventContent>
         <p>{event.description}</p>
       </EventContent>
-    </Fragment>
+    </>
   );
 };
 
