@@ -1,10 +1,10 @@
-import classes from './event-summary.module.css';
+import styles from "./event-summary.module.css";
 
 function EventSummary(props) {
   const { title } = props;
 
   return (
-    <section className={classes.summary}>
+    <section className={styles.summary}>
       <h1>{title}</h1>
     </section>
   );
